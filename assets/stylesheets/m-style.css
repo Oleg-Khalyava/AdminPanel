@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03.11.2018, 18:10:43
+    Author     : hp
+*/
+.product-page {
+    height: 5.0rem;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.my-modal{
+    width: 45vw;  
+}
+.my-modal-height {
+    height: 22vw;
+    max-height: 60vh;
+    min-height: 40vh;
+    overflow-y: auto
+}
+.modall {
+    position: fixed;
+    top:30%;
+    left: 30.14vw;
+    display: none
+}
+.z-visible {
+    display: block;
+    z-index: 1020
+}
+.opacity {
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(8, 8, 8, 0.2);
+    z-index: 1011
+}
+/*analytics unit
+*/
+.font-datepicker {
+    font-size: 2.0rem
+}
+.font-analytics{
+    font-size: 1.3rem
+}
+.font-buyers{
+   font-size: 1.8rem 
+}
+.top-indent-1{
+    margin-top: 0.8rem
+}
+.my-modal-height {
+    height: 22vw;
+    max-height: 60vh;
+    min-height: 40vh;
+    overflow-y: auto
+}
+.my-modal-warning {
+    height: 15vw;
+    max-height: 145px;
+   
+}
+btn-warning {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ff881e;
+    border-color: #ff881e;
+}

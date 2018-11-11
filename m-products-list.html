@@ -1,0 +1,636 @@
+
+<!doctype html>
+<html class="fixed">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="UTF-8">
+
+		<title>Main screen</title>
+		<meta name="keywords" content="HTML5 Admin Panel" />
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+
+		<!-- Specific Page Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/select2/select2.css" />
+		<link rel="stylesheet" href="assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+                <link rel="stylesheet" href="assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+                <!-- m CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/m-style.css">
+                <link rel="stylesheet" href="assets/stylesheets/m-media.css">
+		<!-- Head Libs -->
+		<script src="assets/vendor/modernizr/modernizr.js"></script>
+                <link rel="stylesheet" href="assets/stylesheets/flex.css"
+
+	</head>
+        <body>
+            <div id="opac"></div>
+            <div id="warning" class="modal-products-add modall modall--w1150 modall--w1000 modall--w800">
+                                    <div class="row">
+							<div class="col-xs-12 my-modal my-modal--w1150 my-modal--w1000 my-modal--w800">
+								<section class="panel">
+									<div class="panel-body my-modal-warning">
+								            <div class="main-error mb-xlg">
+							                    <h2 class="text-center text-semibold m-none">Warning<i class="fa fa-warning fa-fw text-warning"></i></h2>
+                                                                            <p class="error-explanation text-center">Недоступно в демо режиме</p>
+                                                                            <div class = "flex-row-wr-center"><button class="btn btn-warning" data-id="warning" data-action = "close">Ок!</button></div>
+                                                                            </div>
+									</div>
+								</section>
+							</div>
+						</div>
+            </div>
+            <div id="productadd" class="modal-products-add modall modall--w1150 modall--w1000 modall--w800">
+                                    <div class="row">
+							<div class="col-xs-12 my-modal my-modal--w1150 my-modal--w1000 my-modal--w800">
+								<section class="panel">
+									<header class="panel-heading">
+										<div class="panel-actions">
+											<a href="#" class="fa fa-caret-down"></a>
+											<a id = "close-modal-productadd" href="#" class="fa fa-times" data-id="productadd" data-form = "form-product-add"></a>
+										</div>
+										<h2 class="panel-title" >Добавление товара</h2>
+									</header>
+									<div class="panel-body my-modal-height">
+										<form id = "form-product-add" class="form-horizontal form-bordered" action="#">
+											<div class="form-group">
+												<label class="col-xs-4 control-label" for="inputDefault">Наименование</label>
+												<div class="col-xs-7">
+													<input type="text" class="form-control" id="inputDefault">
+												</div>
+											</div>
+						                                        <div class="form-group">
+												<label class="col-xs-4 control-label" for="textareaDefault"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Описание</font></font></label>
+												<div class="col-xs-7">
+													<textarea class="form-control" rows="3" data-plugin-maxlength="" maxlength="140"></textarea>
+												</div>
+											</div>
+                                                                                    <div class="form-group">
+												<label class="col-xs-4 control-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Выбор изображения</font></font></label>
+												<div class="col-xs-8">
+													<div class="fileupload fileupload-new" data-provides="fileupload">
+														<div class="input-append">
+															<div class="uneditable-input">
+																<i class="fa fa-file fileupload-exists"></i>
+																<span class="fileupload-preview"></span>
+															</div>
+															<span class="btn btn-default btn-file">
+																<span class="fileupload-exists">Изменить</span>
+																<span class="fileupload-new"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Загрузить</font></font></span>
+																<input type="file">
+															</span>
+															<a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Удалить</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-xs-4 control-label">Категория товара</label>
+												<div class="col-xs-7">
+													<select  data-plugin-selectTwo class="form-control populate">
+                                                                                                              <option>Крупы, макароны</option>
+                                                                                                              <option>Алкоголь</option>
+                                                                                                              <option>Мясо, колбасы</option>
+                                                                                                              <option>Соки, воды</option>
+                                                                                                              <option>Фрукты, овощи, орехи</option>
+                                                                                                              <option>Молоко, сыр, яйца</option>
+                                                                                                              <option>Рыба, морепродукты</option>
+                                                                                                              <option>Замороженные продукты</option>
+                                                                                                              <option>Чай, кофе, сладости</option>
+                                                                                                              <option>Консервы, соусы</option>
+                                                                                                              <option>Бытовая химия</option>
+                                                                                                              <option>Товары для дома</option>
+													</select>
+												</div>
+											</div>
+                                                                                        <div class="form-group">
+												<label class="col-xs-4 control-label" for="inputDefault">Количество</label>
+												<div class="col-xs-4">
+                                                                                                    <input type="number" class="form-control" id="inputDefault">
+												</div>
+                                                                                                <div class="col-md-2 col-xs-3 col-xs-4">
+													<select  data-plugin-selectTwo class="form-control populate">
+                                                                                                              <option>г.</option>
+                                                                                                              <option>кг.</option>
+                                                                                                              <option>л.</option>
+                                                                                                              <option>мл.</option>
+                                                                                                              <option>шт.</option>
+													</select>
+												</div>
+											</div>
+                                                                                    <div class="form-group">
+												<label class="col-xs-4 control-label" for="inputDefault">Цена, &#x20bd</label>
+												<div class="col-xs-4">
+                                                                                                    <input type="number" class="form-control" id="inputDefault">
+                                                                                                </div>
+									            </div>
+                                                                                    <div class="form-group">
+											<label class="col-xs-4 control-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Акционный товар</font></font></label>					
+                                                                                        <div class="col-xs-3">
+                                                                                        <input type="checkbox">
+                                                                                        </div>
+										    </div>
+                                                                                    <div class="form-group">
+                                                                                        <span class="col-xs-8"></span>
+                                                                                        <button id="productadd" class="btn btn-primary" data-id="productadd" data-form = "form-product-add">Добавить товар <i class="fa fa-plus" data-id="productadd"></i></button>    
+										    </div>
+										</form>
+									</div>
+								</section>
+							</div>
+						</div>
+                                    </div>
+             <div id="productchange" class="modal-products-add modall modall--w1150 modall--w1000 modall--w800">
+                                    <div class="row">
+							<div class="col-xs-12 my-modal my-modal--w1150 my-modal--w1000 my-modal--w800">
+								<section class="panel">
+									<header class="panel-heading">
+										<div class="panel-actions">
+											<a href="#" class="fa fa-caret-down"></a>
+											<a id = "close-modal-productchange" href="#" class="fa fa-times" data-id="productchange" data-form = "form-product-change"></a>
+										</div>
+										<h2 class="panel-title" >Редактирование товара</h2>
+									</header>
+									<div class="panel-body my-modal-height">
+										<form id = "form-product-change" class="form-horizontal form-bordered" action="#">
+											<div class="form-group">
+												<label class="col-xs-4 control-label" for="inputDefault">Наименование</label>
+												<div class="col-xs-7">
+													<input type="text" class="form-control" id="inputDefault">
+												</div>
+											</div>
+						                                        <div class="form-group">
+												<label class="col-xs-4 control-label" for="textareaDefault"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Описание</font></font></label>
+												<div class="col-xs-7">
+													<textarea class="form-control" rows="3" data-plugin-maxlength="" maxlength="140"></textarea>
+												</div>
+											</div>
+                                                                                    <div class="form-group">
+												<label class="col-xs-4 control-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Выбор изображения</font></font></label>
+												<div class="col-xs-8">
+													<div class="fileupload fileupload-new" data-provides="fileupload">
+														<div class="input-append">
+															<div class="uneditable-input">
+																<i class="fa fa-file fileupload-exists"></i>
+																<span class="fileupload-preview"></span>
+															</div>
+															<span class="btn btn-default btn-file">
+																<span class="fileupload-exists">Изменить</span>
+																<span class="fileupload-new"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Загрузить</font></font></span>
+																<input type="file">
+															</span>
+															<a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Удалить</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-xs-4 control-label">Категория товара</label>
+												<div class="col-xs-7">
+													<select  data-plugin-selectTwo class="form-control populate">
+                                                                                                              <option>Крупы, макароны</option>
+                                                                                                              <option>Алкоголь</option>
+                                                                                                              <option>Мясо, колбасы</option>
+                                                                                                              <option>Соки, воды</option>
+                                                                                                              <option>Фрукты, овощи, орехи</option>
+                                                                                                              <option>Молоко, сыр, яйца</option>
+                                                                                                              <option>Рыба, морепродукты</option>
+                                                                                                              <option>Замороженные продукты</option>
+                                                                                                              <option>Чай, кофе, сладости</option>
+                                                                                                              <option>Консервы, соусы</option>
+                                                                                                              <option>Бытовая химия</option>
+                                                                                                              <option>Товары для дома</option>
+													</select>
+												</div>
+											</div>
+                                                                                        <div class="form-group">
+												<label class="col-xs-4 control-label" for="inputDefault">Количество</label>
+												<div class="col-xs-4">
+                                                                                                    <input type="number" class="form-control" id="inputDefault">
+												</div>
+                                                                                                <div class="col-md-2 col-xs-3 col-xs-4">
+													<select  data-plugin-selectTwo class="form-control populate">
+                                                                                                              <option>г.</option>
+                                                                                                              <option>кг.</option>
+                                                                                                              <option>л.</option>
+                                                                                                              <option>мл.</option>
+                                                                                                              <option>шт.</option>
+													</select>
+												</div>
+											</div>
+                                                                                    <div class="form-group">
+												<label class="col-xs-4 control-label" for="inputDefault">Цена, &#x20bd</label>
+												<div class="col-xs-4">
+                                                                                                    <input type="number" class="form-control" id="inputDefault">
+                                                                                                </div>
+									            </div>
+                                                                                    <div class="form-group">
+											<label class="col-xs-4 control-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Акционный товар</font></font></label>					
+                                                                                        <div class="col-xs-3">
+                                                                                        <input type="checkbox">
+                                                                                        </div>
+										    </div>
+                                                                                    <div class="form-group">
+                                                                                        <span class="col-xs-8"></span>
+                                                                                        <button id="productchange-button" class="btn btn-primary" data-id="productchange" data-form = "form-product-change">сохранить <i class="fa fa-plus" data-id="productadd"></i></button>    
+										    </div>
+										</form>
+									</div>
+								</section>
+							</div>
+						</div>
+                                    </div>
+		<section class="body">
+
+			<!-- start: header -->
+			<header class="header">
+				<div class="logo-container">
+					<a href="../" class="logo">
+						<img src="img/logo.png" height="35" alt="Admin" />
+					</a>
+					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+					</div>
+				</div>
+			
+				<!-- start: search & user box -->
+				<div class="header-right">
+			
+					<form action="pages-search-results.html" class="search nav-form">
+						<div class="input-group input-search">
+							<input type="text" class="form-control" name="q" id="q" placeholder="...">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+							</span>
+						</div>
+					</form>
+                       
+                                    <span class="separator"></span>
+                                    <ul class="notifications">
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-tasks"></i>
+								<span class="badge">1</span>
+							</a>
+			
+							<div class="dropdown-menu notification-menu large">
+								<div class="notification-title">
+									<span class="pull-right label label-default">3</span>
+									Задачи
+								</div>
+			
+								<div class="content">
+									<ul>
+										<li>
+											<p class="clearfix mb-xs">
+												<span class="message pull-left">Создание отчета о продажах</span>
+												<span class="message pull-right text-dark">60%</span>
+											</p>
+											<div class="progress progress-xs light">
+												<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+											</div>
+                                                                                </li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-envelope"></i>
+								<span class="badge">4</span>
+							</a>
+			
+							<div class="dropdown-menu notification-menu">
+								<div class="notification-title">
+									<span class="pull-right label label-default">230</span>
+									Сообщения
+								</div>
+			
+								<div class="content">
+									<ul>
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="assets/images/!sample-user.jpg" alt="Joseph Doe Junior" class="img-circle" />
+												</figure>
+												<span class="title">Joseph Doe</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="assets/images/!sample-user.jpg" alt="Joseph Junior" class="img-circle" />
+												</figure>
+												<span class="title">Joseph Junior</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="assets/images/!sample-user.jpg" alt="Joe Junior" class="img-circle" />
+												</figure>
+												<span class="title">Joe Junior</span>
+												<span class="message">Lorem ipsum dolor sit.</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="assets/images/!sample-user.jpg" alt="Joseph Junior" class="img-circle" />
+												</figure>
+												<span class="title">Joseph Junior</span>
+											</a>
+										</li>
+									</ul>
+			
+									<hr />
+			
+									<div class="text-right">
+										<a href="#" class="view-more">View All</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-bell"></i>
+								<span class="badge">2</span>
+							</a>
+			
+							<div class="dropdown-menu notification-menu">
+								<div class="notification-title">
+									<span class="pull-right label label-default">3</span>
+									Оповещения
+								</div>
+			
+								<div class="content">
+									<ul>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-thumbs-down bg-danger"></i>
+												</div>
+												<span class="title">Ошибка соединения с сервером</span>
+												<span class="message">2 мин. назад</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-signal bg-success"></i>
+												</div>
+												<span class="title">Связь с сервером восстановлена</span>
+												<span class="message">1 мин. назад</span>
+											</a>
+										</li>
+									</ul>
+			
+									<hr />
+			
+									<div class="text-right">
+										<a href="#" class="view-more">View All</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+                                        <span class="separator"></span>
+					<div id="userbox" class="userbox">
+						<a href="#" data-toggle="dropdown">
+							<figure class="profile-picture">
+								<img src="img/admin.png" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/!logged-user.jpg" />
+							</figure>
+							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
+								<span class="name">John Doe Junior</span>
+								<span class="role">administrator</span>
+							</div>
+			
+							<i class="fa custom-caret"></i>
+						</a>
+			
+						<div class="dropdown-menu">
+							<ul class="list-unstyled">
+								<li class="divider"></li>
+								<li>
+									<a class="cursor-pointer" role="menuitem" tabindex="-1" data-id = "warning" data-action = "open"><i class="fa fa-user"></i> Мой профиль</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="index.html"><i class="fa fa-power-off"></i> Выход</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end: search & user box -->
+			</header>
+			<!-- end: header -->
+
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<aside id="sidebar-left" class="sidebar-left">
+				
+					<div class="sidebar-header">
+						<div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+							<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+						</div>
+					</div>
+				
+					<div class="nano">
+						<div class="nano-content">
+							<nav id="menu" class="nav-main" role="navigation">
+								<ul class="nav nav-main">
+									<li class="nav-active">
+                                                                            <a href="m-dashbord.html">
+											<i class="fa fa-home" aria-hidden="true"></i>
+											<span>Главный экран</span>
+										</a>
+                                                                        </li>
+                                                                        <li>
+										<a href="m-products-list.html">
+											<i class="fa fa-tasks" aria-hidden="true"></i>
+											<span>Каталог товаров</span>
+										</a>
+									</li>
+                                                                        <li>
+										<a href="m-plug.html">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<span>Акционные товары</span>
+										</a>
+									</li>
+                                                                        <li>
+										<a href="m-plug.html">
+											<i class="fa fa-gift" aria-hidden="true"></i>
+											<span>Акции</span>
+										</a>
+									</li>
+                                                                        <li>
+										<a href="m-buyers-list.html">
+											<i class="fa fa-users" aria-hidden="true"></i>
+											<span>Покупатели</span>
+										</a>
+									</li>
+                                                                        <li>
+										<a href="m-plug.html">
+											<i class="fa fa-comments" aria-hidden="true"></i>
+											<span>Обратная связь</span>
+										</a>
+									</li>
+                                                                        <li>
+										<a href="m-plug.html">
+											<i class="fa fa-envelope" aria-hidden="true"></i>
+											<span>Рассылки</span>
+										</a>
+									</li>
+                                                                        <li>
+										<a href="m-plug.html">
+											<i class="fa fa-info-circle" aria-hidden="true"></i>
+											<span>О сервисе</span>
+										</a>
+									</li>
+                                                                        <li>
+										<a href="m-plug.html">
+											<i class="fa fa-cogs" aria-hidden="true"></i>
+											<span>Администрирование</span>
+										</a>
+									</li>
+                                                                        <li>
+										<a href="m-plug.html">
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<span>Профиль</span>
+										</a>
+									</li>
+                                                                        <li>
+										<a href="index.html">
+											<i class="fa fa-power-off" aria-hidden="true"></i>
+											<span>Выход</span>
+										</a>
+									</li>     
+								</ul>
+                                                        </nav>
+						</div>
+				
+					</div>
+				
+				</aside>
+				<!-- end: sidebar -->
+                                <section role="main" class="content-body">
+                                    <header class="page-header">
+						<h2>Товары</h2>
+					</header>
+				    <header class="panel-heading">
+								<h2 class="panel-title">Список товаров</h2>
+							</header>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="mb-md">
+                                                                                    <button id="productsadd" class="btn btn-primary" data-id ='productadd' >Добавить товар <i class="fa fa-plus"></i></button>
+                                                                                        <button  class="btn btn-primary" data-id="warning" data-action ="open">Обновить каталог <i class="fa fa-file"></i></button>
+										</div>
+									</div>
+								</div>
+								<table class="table table-bordered table-striped mb-none" id="datatable-editable">
+									<thead>
+										<tr>
+											<th>Изображение</th>
+											<th>Товар</th>
+											<th>Количество</th>
+											<th>Цена (руб.)</th>
+                                                                                        <th>Изм.</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="gradeX">
+											<td><img src='img/pasta.png' alt="img" class="product-page"></td>
+											<td>Паста "Barlila" Стеллини</td>
+											<td>500 г.</td>
+                                                                                        <td>176,8</td>
+											<td class="actions">
+												<a href="#" class="hidden on-editing sav-row"><i class="fa fa-save"></i></a>
+												<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+												<a href="#" class="on-default edit-row"><i id ="icon-change-product"  class="fa fa-pencil" data-id="productchange"></i></a>
+												<a href="#" class="on-default remove-row"><i class="fa fa-trash-o" data-id = "warning" data-action ="open"></i></a>
+											</td> 
+										</tr>
+										<tr class="gradeX">
+											<td><img src='img/almak.jpg' alt="img" class="product-page"></td>
+											<td>Макароны "Альмак" Пене</td>
+											<td>400 г.</td>
+                                                                                        <td>146,0</td>
+											<td class="actions">
+												<a href="#" class="hidden on-editing sav-row"><i class="fa fa-save"></i></a>
+												<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+												<a href="#" class="on-default edit-row"><i id ="icon-change-product"  class="fa fa-pencil" data-id="productchange"></i></a>
+												<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+											</td> 
+										</tr><tr class="gradeX">
+											<td><img src='img/banno.jpg' alt="img" class="product-page"></td>
+											<td>Рис "Banno" Басмати</td>
+											<td>1000 г.</td>
+                                                                                        <td>381,9</td>
+											<td class="actions">
+												<a href="#" class="hidden on-editing sav-row"><i class="fa fa-save"></i></a>
+												<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+												<a href="#" class="on-default edit-row"><i id ="icon-change-product"  class="fa fa-pencil" data-id="productchange"></i></a>
+												<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+											</td> 
+										</tr>	
+									</tbody>
+								</table>
+							</div>
+						</section>
+				</section>
+                        </div>
+            
+
+		<!-- Vendor -->
+		<script src="assets/vendor/jquery/jquery.js"></script>
+		<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>
+		<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+		<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+                <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		
+		<!-- Specific Page Vendor -->
+		<script src="assets/vendor/select2/select2.js"></script>
+		<script src="assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+		<script src="assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+                <script src="assets/vendor/jquery-autosize/jquery.autosize.js"></script>
+		<script src="assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+	         <script src="assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="assets/javascripts/theme.custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="assets/javascripts/theme.init.js"></script>
+
+
+		<!-- Examples -->
+		<script src="assets/javascripts/tables/examples.datatables.editable.js"></script>
+                <script src="assets/javascripts/theme.my.js"></script>
+		<script src="assets/javascripts/theme.my.modif.js"></script>
+	</body>
+</html>
