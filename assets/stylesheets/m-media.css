@@ -24,6 +24,11 @@ and open the template in the editor.
     left: 20.14vw;
 }
 }
+@media screen and (max-width:992px){
+    .block-btn {
+        display: block;
+    }
+}
 @media screen and (max-width:800px){
    .my-modal--w800{
     width: 85vw;  

@@ -44,6 +44,16 @@ and open the template in the editor.
         -ms-flex-pack: start;
             justify-content: flex-start;
 }
+.flex-row-wr-end{
+    display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+    -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
 .flex-row-nwr-space{
     display: -webkit-box;
          display: -ms-flexbox;

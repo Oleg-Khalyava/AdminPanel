@@ -7,6 +7,24 @@ and open the template in the editor.
     Created on : 03.11.2018, 18:10:43
     Author     : hp
 */
+.height-auto {
+    height: auto
+}
+.hidden-el {
+     display: none;
+}
+.padding-left--20{
+    padding: 0 0 0 2.0rem;
+}
+.margin-top--10{
+    margin: 1.0rem 0 0 0;
+}
+.margin-top--20{
+    margin: 2.0rem 0 0 0;
+}
+.margin-right-left--10{
+    margin: 0 1.0rem 0 1.0rem;
+}
 .product-page {
     height: 5.0rem;
 }
@@ -20,6 +38,12 @@ and open the template in the editor.
     height: 22vw;
     max-height: 60vh;
     min-height: 40vh;
+    overflow-y: auto
+}
+.my-modal-segment-height {
+    height: 12vw;
+    max-height: 60vh;
+    min-height: 10vh;
     overflow-y: auto
 }
 .modall {
@@ -69,4 +93,24 @@ btn-warning {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     background-color: #ff881e;
     border-color: #ff881e;
+}
+.pfoto-user {
+    position: relative;
+}
+.pfoto-user__icon-change-pfoto {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.data-buyers{
+    display: block;
+    color: black;
+    line-height: 1.4rem;
+    font-size: 1.5rem
+}
+.data-buyers-gender {
+    margin-left: 2rem;
+}
+.buyers-sale-img{
+    width: 5.0rem;
 }
