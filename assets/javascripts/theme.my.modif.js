@@ -24,6 +24,7 @@ function btnClickAdd (){
 };
 //Функция закрытия модального окна
 function btnClickRemove (){
+    event.preventDefault();
     commonObj = getElms();
     commonObj.obj.classList.remove(clViz);
     commonObj.opac.classList.remove(clOpac);    
@@ -44,6 +45,7 @@ function listenerBuyers (event){
 };
 let bodyBuyer = document.body;
 bodyBuyer.addEventListener ("click", listenerBuyers);
+
 }());
 
 

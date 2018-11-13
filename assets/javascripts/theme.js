@@ -784,7 +784,7 @@ window.theme = {};
 			})
 			.on( 'click', '.panel-actions a.fa-times', function( e ) {
                                 let id = e.target.dataset.id;
-                                if (id !== "productadd" && id!== "productchange"){
+                                if (id !== "productadd" && id!== "productchange" && id!== "segment" && id!== "card"){
 				e.preventDefault();
 
 				var $panel,
