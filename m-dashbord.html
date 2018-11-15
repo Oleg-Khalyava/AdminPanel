@@ -286,11 +286,23 @@
 											<span>Акции</span>
 										</a>
 									</li>
-                                                                        <li>
-										<a href="m-buyers-list.html">
+                                                                        <li class = "nav-parent">
+										<a>
 											<i class="fa fa-users" aria-hidden="true"></i>
-											<span>Покупатели</span>
+											<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Покупатели</font></font></span>
 										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="m-buyers-list.html">
+													 Пользователи
+												</a>
+											</li>
+											<li>
+												<a href="m-segments.html">
+													 Сегменты
+												</a>
+											</li>
+										</ul>
 									</li>
                                                                         <li>
 										<a href="m-plug.html">
@@ -352,10 +364,11 @@
 
 									<h2 class="panel-title">Аналитика покупок</h2>
 								</header>
-								<div class="panel-body">
+								<div class="panel-body panel-body--bottom-pad">
                                                                       <div class="form-group">  
                                                                           <label class="col-md-1 control-label"><font style="vertical-align: inherit;"><font class="font-datepicker" style="vertical-align: inherit">с</font></font></label>
-												<div class="col-md-5">
+												<div class="col-md-5 col-md-5--w {
+">
 													<div class="input-group">
 														<input type="text" data-plugin-datepicker="" class="form-control">
                                                                                                                 <span class="input-group-addon">
@@ -364,7 +377,8 @@
 													</div>
 												</div>
                                                                                                 <label class="col-md-1 control-label"><font style="vertical-align: inherit;"><font class = "font-datepicker" style="vertical-align: inherit">по</font></font></label>
-												<div class="col-md-5">
+												<div class="col-md-5 col-md-5--w {
+">
 													<div class="input-group">
 														<input type="text" data-plugin-datepicker="" class="form-control">
                                                                                                                 <span class="input-group-addon">
@@ -406,11 +420,11 @@
 
 									</script>
                                                                         <div class="form-group font-analytics"> 
-                                                                            <h3 class="col-md-12">Данные за выбранный период:</h3>
-                                                                            <span class="col-md-12 font-analytics">Общее количество покупок: <span>721</span> шт.</span>
-                                                                            <span class="col-md-12 font-analytics">Количество покупок по карте лояльности: <span>211</span> шт.</span>
-                                                                            <span class="col-md-12 font-analytics">Соотношение купленных акционных товаров: <span>29,3</span> %</span>
-                                                                             <span class="col-md-12 font-analytics">Количество акций: <span>3</span> шт.</span>
+                                                                            <h3 class="col-xs-12">Данные за выбранный период:</h3>
+                                                                            <span class="col-xs-12 font-analytics">Общее количество покупок: <span>721</span> шт.</span>
+                                                                            <span class="col-xs-12 font-analytics">Количество покупок по карте лояльности: <span>211</span> шт.</span>
+                                                                            <span class="col-xs-12 font-analytics">Соотношение купленных акционных товаров: <span>29,3</span> %</span>
+                                                                             <span class="col-xs-12 font-analytics">Использование акций: <span>3</span> раз.</span>
 								         </div>
 
 								</div>
@@ -430,17 +444,18 @@
                                                                     <div class="tabs">
 								        <ul class="nav nav-tabs">
 									    <li class="">
-										<a href="#popular" data-toggle="tab" aria-expanded="false"><font style="vertical-align: inherit;"><font class ='panel-title' style="vertical-align: inherit;">Товары</font></font></a>
+										<a href="#popular" data-toggle="tab" aria-expanded="false"><font style="vertical-align: inherit;"><font class ='block-switch-header' style="vertical-align: inherit;">Товары</font></font></a>
 									    </li>
 									    <li class="active">
-										<a href="#recent" data-toggle="tab" aria-expanded="true"><font class ='panel-title' style="vertical-align: inherit;"><font style="vertical-align: inherit;">Акции</font></font></a>
+										<a href="#recent" data-toggle="tab" aria-expanded="true"><font class ='' style="vertical-align: inherit;"><font class ='block-switch-header' style="vertical-align: inherit;">Акции</font></font></a>
 									    </li>
 								        </ul>
 					           			<div class="tab-content">
 									    <div id="popular" class="tab-pane">
 										<div class="form-group">  
                                                                                                  <label class="col-md-1 control-label"><font style="vertical-align: inherit;"><font class="font-datepicker" style="vertical-align: inherit">с</font></font></label>
-												<div class="col-md-5">
+												<div class="col-md-5 col-md-5--w {
+">
 													<div class="input-group">
 														<input type="text" data-plugin-datepicker="" class="form-control">
                                                                                                                 <span class="input-group-addon">
@@ -449,7 +464,8 @@
 													</div>
 												</div>
                                                                                                 <label class="col-md-1 control-label"><font style="vertical-align: inherit;"><font class = "font-datepicker" style="vertical-align: inherit">по</font></font></label>
-												<div class="col-md-5">
+												<div class="col-md-5 col-md-5--w {
+">
 													<div class="input-group">
 														<input type="text" data-plugin-datepicker="" class="form-control">
                                                                                                                 <span class="input-group-addon">
@@ -461,13 +477,13 @@
 										   <div class="table-responsive">
 											<table class="table table-hover mb-none">
 												<thead>
-													<tr>
-														<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">НАЗВАНИЕ</font></font></th>
-														<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">АКЦ.</font></font></th>
-														<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">КОЛИЧЕСТВО</font></font></th>
+													<tr class = "header-table">
+														<th><font style="vertical-align: inherit; font-weight: normal"><font style="vertical-align: inherit;">НАЗВАНИЕ</font></font></th>
+														<th><font style="vertical-align: inherit; font-weight: normal"><font style="vertical-align: inherit;">АКЦ.</font></font></th>
+														<th><font style="vertical-align: inherit; font-weight: normal"><font style="vertical-align: inherit;">КОЛИЧЕСТВО</font></font></th>
 													</tr>
 												</thead>
-												<tbody>
+												<tbody class="body-table">
 													<tr>
 														<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Творог "Нежинский, 9%"</font></font></td>
 														<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Акц.</font></font></td>
@@ -526,7 +542,7 @@
 									    <div id="recent" class="tab-pane active">
 									       <div class="form-group">  
                                                                                                  <label class="col-md-1 control-label"><font style="vertical-align: inherit;"><font class="font-datepicker" style="vertical-align: inherit">с</font></font></label>
-												<div class="col-md-5">
+												<div class="col-md-5 col-md-5--w ">
 													<div class="input-group">
 														<input type="text" data-plugin-datepicker="" class="form-control">
                                                                                                                 <span class="input-group-addon">
@@ -535,7 +551,7 @@
 													</div>
 												</div>
                                                                                                 <label class="col-md-1 control-label"><font style="vertical-align: inherit;"><font class = "font-datepicker" style="vertical-align: inherit">по</font></font></label>
-												<div class="col-md-5">
+												<div class="col-md-5 col-md-5--w ">
 													<div class="input-group">
 														<input type="text" data-plugin-datepicker="" class="form-control">
                                                                                                                 <span class="input-group-addon">
@@ -546,15 +562,15 @@
 								                   </div>
 										   <div class="table-responsive">
 											<table class="table table-hover mb-none">
-												<thead>
+												<thead class = "header-table">
 													<tr>
-														<th class="col-md-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">НАЗВАНИЕ</font></font></th>
-														<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">НАЧ.</font></font></th>
-														<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ЗАВЕРШ.</font></font></th>
-                                                                                                                <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">КОЛ. ИСП.</font></font></th>
+														<th class="col-md-5"><font style="vertical-align: inherit; font-weight: normal"><font style="vertical-align: inherit;">НАЗВАНИЕ</font></font></th>
+														<th><font style="vertical-align: inherit; font-weight: normal"><font style="vertical-align: inherit;">НАЧ.</font></font></th>
+														<th><font style="vertical-align: inherit; font-weight: normal"><font style="vertical-align: inherit;">ЗАВЕРШ.</font></font></th>
+                                                                                                                <th><font style="vertical-align: inherit; font-weight: normal"><font style="vertical-align: inherit;">КОЛ. ИСП.</font></font></th>
 													</tr>
 												</thead>
-												<tbody>
+												<tbody class = "body-table">
 													<tr>
 														<td class="col-md-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15% на всю выпечку в день твоего рождения!</font></font></td>
 														<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12 сен</font></font></td>

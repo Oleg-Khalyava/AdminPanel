@@ -107,7 +107,7 @@
 												<label class="col-xs-4 control-label">Категория товара</label>
 												<div class="col-xs-7">
 													<select  data-plugin-selectTwo class="form-control populate">
-                                                                                                              <option>Крупы, макароны</option>
+                                                                                                              <option>Крупы, макароныspas</option>
                                                                                                               <option>Алкоголь</option>
                                                                                                               <option>Мясо, колбасы</option>
                                                                                                               <option>Соки, воды</option>
@@ -482,11 +482,23 @@
 											<span>Акции</span>
 										</a>
 									</li>
-                                                                        <li>
-										<a href="m-buyers-list.html">
+                                                                        <li class = "nav-parent">
+										<a>
 											<i class="fa fa-users" aria-hidden="true"></i>
-											<span>Покупатели</span>
+											<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Покупатели</font></font></span>
 										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="m-buyers-list.html">
+													 Пользователи
+												</a>
+											</li>
+											<li>
+												<a href="m-segments.html">
+													 Сегменты
+												</a>
+											</li>
+										</ul>
 									</li>
                                                                         <li>
 										<a href="m-plug.html">
@@ -543,30 +555,30 @@
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="mb-md">
-                                                                                    <button id="productsadd" class="btn btn-primary" data-id ='productadd' >Добавить товар <i class="fa fa-plus"></i></button>
-                                                                                        <button  class="btn btn-primary" data-id="warning" data-action ="open">Обновить каталог <i class="fa fa-file"></i></button>
+                                                                                    <button id="productsadd" class="btn btn-primary margin-bottom--5" data-id ='productadd' >Добавить товар <i class="fa fa-plus"></i></button>
+                                                                                        <button  class="btn btn-primary margin-bottom--5" data-id="warning" data-action ="open">Обновить каталог <i class="fa fa-file"></i></button>
 										</div>
 									</div>
 								</div>
 								<table class="table table-bordered table-striped mb-none" id="datatable-editable">
-									<thead>
+									<thead class = "header-table">
 										<tr>
-											<th>Изображение</th>
-											<th>Товар</th>
-											<th>Количество</th>
-											<th>Цена (руб.)</th>
-                                                                                        <th>Изм.</th>
+											<th type = "text-weight: normal">Изображение</th>
+											<th type = "text-weight: normal">Товар</th>
+											<th type = "text-weight: normal">Количество</th>
+											<th type = "text-weight: normal">Цена (руб.)</th>
+                                                                                        <th type = "text-weight: normal">Изм.</th>
 										</tr>
 									</thead>
-									<tbody>
+                                                                        <tbody class="body-table">
 										<tr class="gradeX">
 											<td><img src='img/pasta.png' alt="img" class="product-page"></td>
 											<td>Паста "Barlila" Стеллини</td>
 											<td>500 г.</td>
                                                                                         <td>176,8</td>
 											<td class="actions">
-												<a href="#" class="hidden on-editing sav-row"><i class="fa fa-save"></i></a>
-												<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+                                                                                            
+												<a href="#" class="on-default remove-row"><i class="fa fa-info" data-id = "warning" data-action ="open"></i></a>
 												<a href="#" class="on-default edit-row"><i id ="icon-change-product"  class="fa fa-pencil" data-id="productchange"></i></a>
 												<a href="#" class="on-default remove-row"><i class="fa fa-trash-o" data-id = "warning" data-action ="open"></i></a>
 											</td> 
@@ -577,10 +589,10 @@
 											<td>400 г.</td>
                                                                                         <td>146,0</td>
 											<td class="actions">
-												<a href="#" class="hidden on-editing sav-row"><i class="fa fa-save"></i></a>
-												<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+                                                                                            
+												<a href="#" class="on-default remove-row"><i class="fa fa-info" data-id = "warning" data-action ="open"></i></a>
 												<a href="#" class="on-default edit-row"><i id ="icon-change-product"  class="fa fa-pencil" data-id="productchange"></i></a>
-												<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+												<a href="#" class="on-default remove-row"><i class="fa fa-trash-o" data-id = "warning" data-action ="open"></i></a>
 											</td> 
 										</tr><tr class="gradeX">
 											<td><img src='img/banno.jpg' alt="img" class="product-page"></td>
@@ -588,10 +600,10 @@
 											<td>1000 г.</td>
                                                                                         <td>381,9</td>
 											<td class="actions">
-												<a href="#" class="hidden on-editing sav-row"><i class="fa fa-save"></i></a>
-												<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+                                                                                            
+												<a href="#" class="on-default remove-row"><i class="fa fa-info" data-id = "warning" data-action ="open"></i></a>
 												<a href="#" class="on-default edit-row"><i id ="icon-change-product"  class="fa fa-pencil" data-id="productchange"></i></a>
-												<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+												<a href="#" class="on-default remove-row"><i class="fa fa-trash-o" data-id = "warning" data-action ="open"></i></a>
 											</td> 
 										</tr>	
 									</tbody>

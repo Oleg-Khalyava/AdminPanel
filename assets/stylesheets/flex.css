@@ -79,3 +79,8 @@ and open the template in the editor.
         -ms-flex-line-pack: center;
                 align-content: center
 }
+.flex-aling-start {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}

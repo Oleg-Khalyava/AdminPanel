@@ -7,17 +7,49 @@ and open the template in the editor.
     Created on : 03.11.2018, 18:10:43
     Author     : hp
 */
+.block-width {
+    width: 100%;
+}
+.text-hidden-point {
+    white-space: nowrap;
+    overflow-x: hidden; 
+    padding: 5px; 
+    text-overflow: ellipsis;
+}
+.list-no-padding{
+    list-style-type: none;
+    margin-left: 0; 
+    padding-left: 0;
+}
 .height-auto {
     height: auto
 }
 .hidden-el {
      display: none;
 }
+.padding-left--5{
+    padding-left: 0.5rem;
+}
+.padding-left--10{
+    padding-left: 1.0rem;
+}
 .padding-left--20{
     padding: 0 0 0 2.0rem;
 }
 .margin-top--10{
     margin: 1.0rem 0 0 0;
+}
+.margin-top--5{
+    margin: 0.5rem 0 0 0;
+}
+.margin-bottom--5{
+    margin-bottom: 0.5rem;
+}
+.margin-right--20{
+    margin: 0 2.0rem 0 0;
+}
+.margin-right--10{
+    margin-right: 1.0rem;
 }
 .margin-top--20{
     margin: 2.0rem 0 0 0;
@@ -30,6 +62,22 @@ and open the template in the editor.
 }
 .cursor-pointer {
     cursor: pointer;
+}
+.block-switch-header, .font-datepicker, .font-buyers  {
+    color: #1d1d18;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0;
+    text-transform: none;
+}
+.panel-title {
+    color: #33353f;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0;
+    text-transform: none;
 }
 .my-modal{
     width: 45vw;  
@@ -65,9 +113,9 @@ and open the template in the editor.
 }
 /*analytics unit
 */
-.font-datepicker {
+/*.font-datepicker {
     font-size: 2.0rem
-}
+}*/
 .font-analytics{
     font-size: 1.3rem
 }
@@ -114,3 +162,67 @@ btn-warning {
 .buyers-sale-img{
     width: 5.0rem;
 }
+.segment-sale-page{
+    width: 3.0rem;
+}
+.header-table {
+    color:#b9b9b9;
+    font-size: 1.1rem;
+    font-weight: normal
+}
+.body-table {
+    color:#454545;
+}
+.panel-body--bottom-pad {
+    padding-bottom: 30px;
+}
+ .form-control--pad {
+   padding: 6px 2px;
+    padding-top: 6px;
+    padding-right: 2px;
+    padding-bottom: 6px;
+    padding-left: 2px
+ }
+ .buyers-content-block{
+     max-width: 1700px
+ }
+ .buyers-btn-pluslist {
+     display: inline-block
+ }
+ .buyer-profile-change {
+     font-size: 20px;
+ }
+ .buyers-profile-data {
+    color:#b9b9b9;
+}
+.buyers-costs-page{
+    width: 1.5rem;
+    margin-right: 1.0rem
+}
+.buyers-costs-many{
+    margin-left: 1.0rem
+}
+.buyers-costs-btn{
+    color: #33CC66;
+    font-size: 1.5rem;
+    background-color: white;
+    border: 0px solid 
+    
+}
+.buyers-costs-btn:hover {
+    cursor: pointer;
+}
+.hidden {
+   overflow-y: hidden;
+   max-height: 0px;
+}
+.visible{
+    max-height: 300px;
+    -webkit-transition: max-height 10.0s;
+         transition: max-height 10.0s;
+}
+.rotate{
+    -webkit-transform: rotateZ(-180deg);
+       transform: rotateZ(-180deg);
+}
+

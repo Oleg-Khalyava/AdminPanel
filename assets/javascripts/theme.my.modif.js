@@ -29,6 +29,24 @@ function btnClickRemove (){
     commonObj.obj.classList.remove(clViz);
     commonObj.opac.classList.remove(clOpac);    
 };
+    function visibleOrHidden (){
+        let id = event.target.dataset.id;
+        let idIcon = event.target.dataset.idicon;
+        let icon = document.getElementById(idIcon);
+        let obj = document.getElementById(id);
+        let iconCl = icon.classList;
+        let cl = obj.classList;
+        iconCl.toggle("rotate")
+        if (cl.contains ("hidden")){
+            cl.remove ("hidden");
+            cl.add("visible");
+        }
+        else {
+            cl.add ("hidden");
+            cl.remove("visible");
+        }
+    } 
+
 //Обработчик события
 function listenerBuyers (event){
     let action = event.target.dataset.action;
@@ -38,6 +56,9 @@ function listenerBuyers (event){
              break; 
          case "close": 
                 btnClickRemove();
+                break;
+            case "open-close":
+                visibleOrHidden();
                 break;
          default:
              break;

@@ -282,11 +282,23 @@
 											<span>Акции</span>
 										</a>
 									</li>
-                                                                        <li>
-										<a href="m-buyers-list.html">
+                                                                        <li class = "nav-parent">
+										<a>
 											<i class="fa fa-users" aria-hidden="true"></i>
-											<span>Покупатели</span>
+											<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Покупатели</font></font></span>
 										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="m-buyers-list.html">
+													 Пользователи
+												</a>
+											</li>
+											<li>
+												<a href="m-segments.html">
+													 Сегменты
+												</a>
+											</li>
+										</ul>
 									</li>
                                                                         <li>
 										<a href="m-plug.html">
@@ -341,37 +353,31 @@
 							</header>
 							<div class="panel-body">
 								<div>
-                                                                    <span class="font-buyers">Добавление покупателей</span>
 									<div class="row">
-										<div  class="mb-md col-sm-8 top-indent-1">
-                                                                                     <button id ='add-buyers' class="btn btn-primary" data-id="warning" data-action = "open">Создать <i class="fa fa-plus"></i></button>
-                                                                                     <button  class="btn btn-primary" data-id="warning" data-action = "open">Добавить список <i class="fa fa-plus"></i></button>
+										<div  class="mb-md col-sm-9 top-indent-1 flex-row-wr-start flex-aling-start">
+                                                                                     <button id ='add-buyers' class="btn btn-primary margin-right--10" data-id="warning" data-action = "open">Создать <i class="fa fa-plus"></i></button>
+                                                                                     <div>
+                                                                                         <button  class="btn btn-primary" data-id="warning" data-action = "open">Добавить список <i class="fa fa-plus"></i></button>
+                                                                                         <div class = "padding-left--5 margin-top--5"><a href='#' data-id='warning' data-action = "open">просмотреть образец файла </a></div>
+                                                                                     </div>
 										</div>
-									</div>
-								</div>
-                                                                <div>
-                                                                    <span class="font-buyers">Выгрузка базы (XLS)</span>
-									<div class="row">
-										<div class="mb-md col-sm-8 top-indent-1">
-                                                                                     <button class="btn btn-primary" data-id="warning" data-action = "open">Образец файла <i class="fa fa-file"></i></button>
+                                                                              <div class="mb-md col-sm-3 top-indent-1">
                                                                                      <button  class="btn btn-primary" data-id="warning" data-action = "open">Выгрузить базу <i class="fa fa-file"></i></button>
 										</div>
 									</div>
 								</div>
-                                           
-                                                               
 								<table class="table table-bordered table-striped mb-none" id="datatable-editable">
-									<thead>
+									<thead class = "header-table">
 										<tr>
-											<th>Фамилия       </th>
-											<th>Имя  </th>
-											<th>Тел.</th>
-											<th>Email       </th>
-                                                                                        <th>Пол </th>
-                                                                                        <th>Изм.</th>
+											<th type = "text-weight: normal">Фамилия       </th>
+											<th type = "text-weight: normal">Имя  </th>
+											<th type = "text-weight: normal">Тел.</th>
+											<th type = "text-weight: normal">Email       </th>
+                                                                                        <th type = "text-weight: normal">Пол </th>
+                                                                                        <th type = "text-weight: normal">Изм.</th>
 										</tr>
 									</thead>
-									<tbody>
+									<tbody class = "body-table">
 										<tr class="gradeX">
 											<td>Дмитренко</td>
 											<td>Андрей</td>
