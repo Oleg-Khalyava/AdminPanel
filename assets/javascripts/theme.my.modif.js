@@ -9,7 +9,7 @@
 (function (){
  let clViz = "z-visible";
  let clOpac = "opacity"; 
- function getElms (){
+ function getElms (event){
      let id = event.target.dataset.id;
      let commonObj = {obj:null,opac: null};
      commonObj.obj = document.getElementById(id);
@@ -23,7 +23,7 @@ function btnClickAdd (){
     commonObj.opac.classList.add(clOpac);
 };
 //Функция закрытия модального окна
-function btnClickRemove (){
+function btnClickRemove (event){
     event.preventDefault();
     commonObj = getElms();
     commonObj.obj.classList.remove(clViz);
@@ -44,7 +44,7 @@ function actionCreateHidden (){
     mainAction.style.display = "block";;
 }
 
-    function visibleOrHidden (){
+    function visibleOrHidden (event){
         let id = event.target.dataset.id;
         let idIcon = event.target.dataset.idicon;
         let icon = document.getElementById(idIcon);
@@ -70,10 +70,10 @@ function listenerBuyers (event){
              btnClickAdd();
              break; 
          case "close": 
-                btnClickRemove();
+                btnClickRemove(event);
                 break;
             case "open-close":
-                visibleOrHidden();
+                visibleOrHidden(event);
                 break;
             case "action-create-visible":
                 actionCreateVisible();
