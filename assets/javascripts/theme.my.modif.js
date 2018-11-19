@@ -29,6 +29,21 @@ function btnClickRemove (){
     commonObj.obj.classList.remove(clViz);
     commonObj.opac.classList.remove(clOpac);    
 };
+// отображение блока создания акции 
+function actionCreateVisible (){
+    let mainAction = document.getElementById("main-action");
+    let mainActionCreate = document.getElementById("main-action-create");
+    mainAction.style.display = "none";
+    mainActionCreate.style.display = "block";
+}
+// скрытие блока создания акции 
+function actionCreateHidden (){
+    let mainAction = document.getElementById("main-action");
+    let mainActionCreate = document.getElementById("main-action-create");
+    mainActionCreate.style.display = "none";
+    mainAction.style.display = "block";;
+}
+
     function visibleOrHidden (){
         let id = event.target.dataset.id;
         let idIcon = event.target.dataset.idicon;
@@ -36,7 +51,7 @@ function btnClickRemove (){
         let obj = document.getElementById(id);
         let iconCl = icon.classList;
         let cl = obj.classList;
-        iconCl.toggle("rotate")
+        iconCl.toggle("rotate");
         if (cl.contains ("hidden")){
             cl.remove ("hidden");
             cl.add("visible");
@@ -59,6 +74,12 @@ function listenerBuyers (event){
                 break;
             case "open-close":
                 visibleOrHidden();
+                break;
+            case "action-create-visible":
+                actionCreateVisible();
+                break;
+             case "action-create-hidden":
+                actionCreateHidden();
                 break;
          default:
              break;

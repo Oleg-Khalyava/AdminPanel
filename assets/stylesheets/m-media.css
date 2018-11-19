@@ -14,7 +14,6 @@ and open the template in the editor.
  .modall--w1150{
     left: 25.14vw;
 }
-
 }
 
 @media screen and (max-width:1000px){
@@ -39,8 +38,50 @@ and open the template in the editor.
     left: 10.14vw;
 }
 }
+@media screen and (max-width:450px){
+ .action-create-imgplus-common {
+    border: 1px dashed black;
+    width: 25vw;
+    height:25vw
+}
+.flex-row-wr-center--w450{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+         -ms-flex-pack: center;
+            justify-content: center;
+}
+}
 @media screen and (min-width: 992px){
 .col-md-5--w {
     width: 39.66666667%;
 }
+.col-md-10--w
+{
+    padding-right: 5px;
+}
+.col-lg-2--w
+{
+    padding-left: 0px;
+}
+.block-percentage {
+    padding-left: 0;
+    padding-right: 0
+}
+.float-btn
+{
+    position: absolute;
+    right: 10px;
+    top: -55px;
+}
+}
+@media screen and (min-width: 200px){
+.col-md-2--w {
+    padding-left: 30px;
+    padding-bottom: 15px
+}
+
 }
